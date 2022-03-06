@@ -1,0 +1,15 @@
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.csproj.AssemblyReference.cache
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.AssemblyInfoInputs.cache
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.AssemblyInfo.cs
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.csproj.CoreCompileInputs.cache
+/Users/jelvers/Desktop/repos/TicketingSystemV2/bin/Debug/net5.0/TicketingSystemV2.deps.json
+/Users/jelvers/Desktop/repos/TicketingSystemV2/bin/Debug/net5.0/TicketingSystemV2.runtimeconfig.json
+/Users/jelvers/Desktop/repos/TicketingSystemV2/bin/Debug/net5.0/TicketingSystemV2.runtimeconfig.dev.json
+/Users/jelvers/Desktop/repos/TicketingSystemV2/bin/Debug/net5.0/TicketingSystemV2.dll
+/Users/jelvers/Desktop/repos/TicketingSystemV2/bin/Debug/net5.0/ref/TicketingSystemV2.dll
+/Users/jelvers/Desktop/repos/TicketingSystemV2/bin/Debug/net5.0/TicketingSystemV2.pdb
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.dll
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/ref/TicketingSystemV2.dll
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.pdb
+/Users/jelvers/Desktop/repos/TicketingSystemV2/obj/Debug/net5.0/TicketingSystemV2.genruntimeconfig.cache

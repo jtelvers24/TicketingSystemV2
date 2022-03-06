@@ -3,40 +3,51 @@ using System.IO;
 
 namespace TicketingSystemV2
 {
-    class Program
-    {
+    class Program{
         static void Main(string[] args)
         {
-            
-        }
+           
     }
+    
 
     class ReadFile
     {
-    static void Main(string[] args)
-    {
+       public string hello(){
+           return "hello";
+       }
+        public void RunReadFile(){
+            string file = "tickets.csv";
+               // read data from file
+                    if (File.Exists(file))
+                    {
+                        // accumulators needed for GPA
+                    
+                        // read data from file
+                        StreamReader sr = new StreamReader(file);
+                        while (!sr.EndOfStream)
+                        {
+                            string line = sr.ReadLine();
+                            // convert string to array
+                            string[] arr = line.Split('|');
+                            // display array data
+                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6]);
+                           
+                        }
+                        sr.Close();
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine("File does not exist");
+                    }
         
-        if (File.Exists("tickets.csv"))
-            {
-            StreamReader sr = new StreamReader("tickets.csv");
-                while (!sr.EndOfStream)
-                {
-                    string line = sr.ReadLine();
-                    string[] arr = line.Split('|');
-                    Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6]);
-                }
-                sr.Close(); 
-                }
-                else
-                {
-                    Console.WriteLine("File does not exist");
-                }
         }
-    }
+    } 
+
 
     class WriteFile
     {
-        static void Main(string[] args)
+        public void RunWriteFile()
         {
             string choice = " ";
             StreamWriter sw = new StreamWriter("tickets.csv", append: true);
@@ -77,6 +88,6 @@ namespace TicketingSystemV2
                 }while (choice == "1" || choice == "2");
       
 
-        }}
+        }
     
 }
