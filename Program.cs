@@ -6,7 +6,29 @@ namespace TicketingSystemV2
     class Program{
         static void Main(string[] args)
         {
-           
+            string choice;
+            do
+            {
+                // ask user a question
+                Console.WriteLine("1) Read data from file.");
+                Console.WriteLine("2) Create file from data.");
+                Console.WriteLine("Enter any other key to exit.");
+                // input response
+                choice = Console.ReadLine();
+
+                if (choice == "1")
+                {
+                   ReadFile runReadFile = new ReadFile();
+                   runReadFile.RunReadFile();
+                }
+                else if (choice == "2")
+                {
+                  WriteFile runWriteFile = new WriteFile();
+                  runWriteFile.RunWriteFile();
+                }
+            } while (choice == "1" || choice == "2");
+        }
+        }
     }
     
 
