@@ -12,10 +12,10 @@ namespace TicketingSystemV2
                 // ask user a question
                 Console.WriteLine("1) Read Tickets.");
                 Console.WriteLine("2) Create Ticket.");
-                Console.WriteLine("1) Read Enhancements.");
-                Console.WriteLine("2) Create Enhancements.");
-                Console.WriteLine("1) Read Tasks.");
-                Console.WriteLine("2) Create Task.");
+                Console.WriteLine("3) Read Enhancements.");
+                Console.WriteLine("4) Create Enhancements.");
+                Console.WriteLine("5) Read Tasks.");
+                Console.WriteLine("6) Create Task.");
                 Console.WriteLine("Enter any other key to exit.");
                 // input response
                 choice = Console.ReadLine();
@@ -40,6 +40,36 @@ namespace TicketingSystemV2
                 }
             } while (choice == "1" || choice == "2");
         }
+        }
+    }
+    class ReadTask
+    {
+        public void RunReadFile(){
+            string file = "Task.csv";
+               // read data from file
+                    if (File.Exists(file))
+                    {
+                        // accumulators needed for GPA
+                    
+                        // read data from file
+                        StreamReader sr = new StreamReader(file);
+                        while (!sr.EndOfStream)
+                        {
+                            string line = sr.ReadLine();
+                            // convert string to array
+                            string[] arr = line.Split('|');
+                            // display array data
+                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6]);
+                           
+                        }
+                        sr.Close();
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine("File does not exist");
+                    }
+        
         }
     }
     class WriteEnhancments
