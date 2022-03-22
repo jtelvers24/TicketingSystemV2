@@ -35,9 +35,36 @@ namespace TicketingSystemV2
         }
     }
     
-    class ReadEnhancements{
-
+    class ReadEnhancements
+    {
+public void RunReadFile(){
+            string file = "Enhancements.csv";
+               // read data from file
+                    if (File.Exists(file))
+                    {
+                        // accumulators needed for GPA
+                    
+                        // read data from file
+                        StreamReader sr = new StreamReader(file);
+                        while (!sr.EndOfStream)
+                        {
+                            string line = sr.ReadLine();
+                            // convert string to array
+                            string[] arr = line.Split('|');
+                            // display array data
+                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6]);
+                           
+                        }
+                        sr.Close();
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine("File does not exist");
+                    }
         
+        }
+
     }
     class ReadFile
     {
