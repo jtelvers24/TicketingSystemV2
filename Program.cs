@@ -88,7 +88,15 @@ namespace TicketingSystemV2
                     Console.WriteLine("Watching");
                         // save the course grade
                     string watching = Console.ReadLine();
-                    sw.WriteLine("{0}|{1}|{2}|{3}|{4}|{5}|{6}", i, summary, status, priority, submitter, assigned, watching);
+                     Console.WriteLine("ProjectName");
+                        // save the course grade
+                    string ProjectName = Console.ReadLine();
+                     Console.WriteLine("Due Date");
+                        // save the course grade
+                    string dueDate = Console.ReadLine();
+
+
+                    sw.WriteLine("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}", i, summary, status, priority, submitter, assigned, watching, ProjectName, dueDate);
                     
                     sw.Close();
                 }while (choice == "1" || choice == "2");
@@ -113,7 +121,7 @@ namespace TicketingSystemV2
                             // convert string to array
                             string[] arr = line.Split('|');
                             // display array data
-                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6]);
+                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6] + arr[7] + "," + arr[8]);
                            
                         }
                         sr.Close();
@@ -236,7 +244,6 @@ public void RunReadFile(){
         
         }
     } 
-
 
     class WriteFile
     {
