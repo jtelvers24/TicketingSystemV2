@@ -121,7 +121,7 @@ namespace TicketingSystemV2
                             // convert string to array
                             string[] arr = line.Split('|');
                             // display array data
-                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6] + arr[7] + "," + arr[8]);
+                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6] + "," + arr[7] + "," + arr[8]);
                            
                         }
                         sr.Close();
@@ -136,7 +136,7 @@ namespace TicketingSystemV2
     }
     class WriteEnhancments
     {
-        public void RunWriteFile()
+        public async void RunWriteFile()
         {
             string choice = " ";
             StreamWriter sw = new StreamWriter("Enhancements.csv", append: true);
@@ -169,9 +169,17 @@ namespace TicketingSystemV2
                         // save the course grade
                     string assigned = Console.ReadLine();
                     Console.WriteLine("Watching");
-                        // save the course grade
                     string watching = Console.ReadLine();
-                    sw.WriteLine("{0}|{1}|{2}|{3}|{4}|{5}|{6}", i, summary, status, priority, submitter, assigned, watching);
+                    Console.WriteLine("Software");
+                    string software = Console.ReadLine();
+                    Console.WriteLine("Cost");
+                    string cost = Console.ReadLine();
+                    Console.WriteLine("Reason");
+                    string reason = Console.ReadLine();
+                    Console.WriteLine("Estimate");
+                    string estimate = Console.ReadLine();
+
+                    sw.WriteLine("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}", i, summary, status, priority, submitter, assigned, watching,software,cost,reason,estimate);
                     
                     sw.Close();
                 }while (choice == "1" || choice == "2");
@@ -197,7 +205,7 @@ public void RunReadFile(){
                             // convert string to array
                             string[] arr = line.Split('|');
                             // display array data
-                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6]);
+                            Console.WriteLine(arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] + "," + arr[4] + "," + arr[5] + "," + arr[6] + "," + arr[7] + "," + arr[8] + "," + arr[9] + "," + arr[10]);
                            
                         }
                         sr.Close();
