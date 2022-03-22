@@ -30,6 +30,14 @@ namespace TicketingSystemV2
                   WriteFile runWriteFile = new WriteFile();
                   runWriteFile.RunWriteFile();
                 }
+                else if (choice == "3"){
+                   ReadEnhancements runReadFile = new ReadEnhancements();
+                   runReadFile.RunReadFile(); 
+                }
+                else if (choice == "4"){
+                    WriteEnhancments runWriteFile = new WriteEnhancments();
+                  runWriteFile.RunWriteFile();
+                }
             } while (choice == "1" || choice == "2");
         }
         }
