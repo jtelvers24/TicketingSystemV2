@@ -10,8 +10,12 @@ namespace TicketingSystemV2
             do
             {
                 // ask user a question
-                Console.WriteLine("1) Read data from file.");
-                Console.WriteLine("2) Create file from data.");
+                Console.WriteLine("1) Read Tickets.");
+                Console.WriteLine("2) Create Ticket.");
+                Console.WriteLine("1) Read Enhancements.");
+                Console.WriteLine("2) Create Enhancements.");
+                Console.WriteLine("1) Read Tasks.");
+                Console.WriteLine("2) Create Task.");
                 Console.WriteLine("Enter any other key to exit.");
                 // input response
                 choice = Console.ReadLine();
@@ -31,7 +35,10 @@ namespace TicketingSystemV2
         }
     }
     
+    class ReadEnhancements{
 
+        
+    }
     class ReadFile
     {
        public string hello(){
