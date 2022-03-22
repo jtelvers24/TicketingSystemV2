@@ -38,6 +38,15 @@ namespace TicketingSystemV2
                     WriteEnhancments runWriteFile = new WriteEnhancments();
                   runWriteFile.RunWriteFile();
                 }
+                 else if (choice == "5"){
+                    ReadTask runReadFile = new ReadTask();
+                   runReadFile.RunReadFile(); 
+                }
+                 else if (choice == "6"){
+                    WriteTask runWriteFile = new WriteTask();
+                  runWriteFile.RunWriteFile();
+                }
+                
             } while (choice == "1" || choice == "2");
         }
         }
