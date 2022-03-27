@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "rmrkZgbHeCj4bi5Uhi8hJdHgxExxcg2lT++PPBfgFT/zLEjF5VF5HlJE0A8HCtk9qnGX8Ji9kZ/R2PnRk1y3DA==",
+  "dgSpecHash": "vM2KLmJw/0z5tPqs2l3x8NjMWA3Ox4j7zQ24BQ5p0I5kaScI97waHAYRb0KC2U0KH7ez8Ll6DLLwMECMRU4evg==",
   "success": true,
   "projectFilePath": "/Users/jelvers/Desktop/repos/TicketingSystemV2/TicketingSystemV2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.0/microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/nlog/4.7.11/nlog.4.7.11.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/nlog.extensions.logging/1.7.4/nlog.extensions.logging.1.7.4.nupkg.sha512",
+    "/Users/jelvers/.nuget/packages/nlog.web.aspnetcore/4.14.0/nlog.web.aspnetcore.4.14.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,11 +1,25 @@
 ﻿using System;
+
 using System.IO;
+using System.Linq;
 
 namespace TicketingSystemV2
 {
     class Program{
         static void Main(string[] args)
         {
+                        string path = Directory.GetCurrentDirectory() + "//nlog.config";
+
+            // create instance of Logger
+            var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
+
+            // log sample messages
+            logger.Trace("Sample trace message");
+            logger.Debug("Sample debug message");
+            logger.Info("Sample informational message");
+            logger.Warn("Sample warning message");
+            logger.Error("Sample error message");
+            logger.Fatal("Sample fatal error message");
             string choice;
             do
             {
@@ -16,6 +30,7 @@ namespace TicketingSystemV2
                 Console.WriteLine("4) Create Enhancements.");
                 Console.WriteLine("5) Read Tasks.");
                 Console.WriteLine("6) Create Task.");
+                Console.WriteLine("7) Search for Ticket");
                 Console.WriteLine("Enter any other key to exit.");
                 // input response
                 choice = Console.ReadLine();
@@ -46,9 +61,52 @@ namespace TicketingSystemV2
                     WriteTask runWriteFile = new WriteTask();
                   runWriteFile.RunWriteFile();
                 }
+                else if (choice == "7"){
+                    TicketSearch TicketSearchOperation = new TicketSearch();
+                    TicketSearchOperation.TicketSearchOperation();
+                }
                 
             } while (choice == "1" || choice == "2");
         }
+        }
+    }
+
+    class TicketSearch
+    {
+        public void TicketSearchOperation(){
+
+            
+
+            
+
+
+
+
+
+                string task = "Task.csv";
+                string ticket = "tickets.csv";
+                string enhancement = "Enhancements.csv";
+                string search = Console.ReadLine();
+                                   
+                 if (File.Exists(task))
+                    {
+                        StreamReader sr = new StreamReader(task);
+                        while (!sr.EndOfStream)
+                        {
+                            string line = sr.ReadLine();
+                            string[] arr = line.Split('|');
+                            var myLinqQuery = from arrs in arr[3]
+                                                where arr.Contains(search)
+                                                select arrs;
+
+                            foreach(var arrs in myLinqQuery)
+                            Console.Write(arrs);
+                        }
+                        sr.Close();
+                    }
+                    
+
+
         }
     }
     class WriteTask
